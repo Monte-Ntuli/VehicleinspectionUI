@@ -1,0 +1,36 @@
+<table class="table table-stiped">
+    <thead>
+        <tr>
+            <th>Working_Aircon</th>
+            <th>Hooter_Working</th>
+            <th>Guages_working</th>
+            <th>Panic_Button_in_order</th>
+            <th>Handbrake_working</th>
+            <th>Seatbelts_working</th>
+            <th>fire_exstingusher_sealed</th>
+            <th>Fire_exstinguisher_date</th>
+            <th>Fisrt_Aid_Kit_Sealed</th>
+            <th>House_Keeping</th>
+            <th>DriverID</th>
+            <th>Date</th>
+            <th>TruckRegistration</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let dataItem of InCabInfo">
+                <td>{{dataItem.Working_Aircon}}</td>
+                <td>{{dataItem.Hooter_Working}}</td>
+                <td>{{dataItem.Guages_working}}</td>
+                <td>{{dataItem.Panic_Button_in_order}}</td>
+                <td>{{dataItem.Handbrake_working}}</td>
+                <td>{{dataItem.Seatbelts_working}}</td>
+                <td>{{dataItem.fire_exstingusher_sealed}}</td>
+                <td>{{dataItem.Fire_exstinguisher_date}}</td>
+                <td>{{dataItem.Fisrt_Aid_Kit_Sealed}}</td>
+                <td>{{dataItem.House_Keeping}}</td>
+                <td>{{dataItem.DriverID}}</td>
+                <td>{{dataItem.Date}}</td>
+                <td>{{dataItem.TruckRegistration}}</td>
+            </tr>
+        </tbody>
+    </thead>
+</table>

@@ -1,0 +1,41 @@
+<div class="form-froup row"> 
+
+    <label class="col-sm-2 col-form-lable">Driver Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" 
+        [(ngModel)]="Driver" placeholder="Enter Driver Name">
+    </div>
+
+    <label class="col-sm-2 col-form-lable">Driver Surname</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" 
+        [(ngModel)]="Driver" placeholder="Enter Surname">
+    </div>
+
+    <label class="col-sm-2 col-form-lable">Driver ID</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" 
+        [(ngModel)]="Driver" placeholder="Enter Driver ID">
+    </div>
+
+    <label class="col-sm-2 col-form-lable">Driver Gender</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" 
+        [(ngModel)]="Driver" placeholder="Enter Driver Gender">
+    </div>
+
+    <label class="col-sm-2 col-form-lable">Driver Password</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" 
+        [(ngModel)]="Driver" placeholder="Enter Driver Password">
+    </div>
+
+</div>
+
+<button (click)="addDriver()" *ngIF="Driver.DriverCount==0" class="btn btn-primary"> 
+    Add
+</button>
+
+<button (click)="updateDriver()" *ngIF="Driver.DriverCount!=0" class="btn btn-primary"> 
+    Update
+</button>

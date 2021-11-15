@@ -1,0 +1,42 @@
+<table class="table table-stiped">
+    <thead>
+        <tr>
+            <th>Fitted_Yellow_Reflections</th>
+            <th>Tyre_tread_above_4mm</th>
+            <th>Wheel_markers_Fitted</th>
+            <th>Aligned_wheel_markers</th>
+            <th>No_smoking_decals_in_place</th>
+            <th>no_naked_flame_decals_in_place</th>
+            <th>fire_exstiguisher_date</th>
+            <th>fire_exstinguisher_sealed</th>
+            <th>All_lights_working</th>
+            <th>all_indicators_working</th>
+            <th>Trailer_brakes_working</th>
+            <th>Fire_permit_and_tremcards_in_order</th>
+            <th>Dents_and_damages_on_trailer</th>
+            <th>Driver ID</th>
+            <th>Date</th>
+            <th>TruckRegistration</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let dataItem of DriverInfo">
+                <td>{{dataItem.Fitted_Yellow_Reflections}}</td>
+                <td>{{dataItem.Tyre_tread_above_4mm}}</td>
+                <td>{{dataItem.Wheel_markers_Fitted}}</td>
+                <td>{{dataItem.Aligned_wheel_markers}}</td>
+                <td>{{dataItem.No_smoking_decals_in_place}}</td>
+                <td>{{dataItem.no_naked_flame_decals_in_place}}</td>
+                <td>{{dataItem.fire_exstiguisher_date}}</td>
+                <td>{{dataItem.fire_exstinguisher_sealed}}</td>
+                <td>{{dataItem.All_lights_working}}</td>
+                <td>{{dataItem.all_indicators_working}}</td>
+                <td>{{dataItem.Trailer_brakes_working}}</td>
+                <td>{{dataItem.Fire_permit_and_tremcards_in_order}}</td>
+                <td>{{dataItem.Dents_and_damages_on_trailer}}</td>
+                <td>{{dataItem.DriverID}}</td>
+                <td>{{dataItem.Date}}</td>
+                <td>{{dataItem.TruckRegistration}}</td>
+            </tr>
+        </tbody>
+    </thead>
+</table>

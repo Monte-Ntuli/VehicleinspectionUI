@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #1A1815;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #AA9008;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #AA9008;
+    color: #1A1815;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  /*Body of the html*/
+
+  .bodystuff{
+      border: #AA9008;
+      border-style:solid;
+      border-width: 5%;
+      margin: 2%;
+      color: #1A1815;
+  }
+
+  .bodyheaders{
+      margin: 1%;
+  }
+
+  .button{
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+    color: #1A1815;
+  }
+
+  
